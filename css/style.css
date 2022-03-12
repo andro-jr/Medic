@@ -848,6 +848,7 @@ footer{
     text-align: center;
     font-size: 18px;
     color: rgb(90, 89, 89);
+    font-family: 'Poppins', sans-serif;
     margin: 5px;
 }
 .footer_box .fa-solid{
