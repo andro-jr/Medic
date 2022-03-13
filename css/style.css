@@ -29,8 +29,11 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
+.logo_container{
+    width: 12%;
+}
 .logo_container img{
-    width: 180px;
+    width: 100%;
 }
 .nav_items ul{
     display: flex;
@@ -62,15 +65,9 @@ ul li a{
     transition: 0.5s;
     margin-top: 5px;
 }
-/* .nav_items ul li a:hover{
-    color:#a37d00;
-} */
 .nav_items ul li a:hover:after {
     width: 100%;
 }
-/* .active a {
-    color: #dab641;
-} */
 .active a::after{
     width:100%;
 }
@@ -986,3 +983,110 @@ footer{
 .quick_links ul .no_border{
     border-right: none;
 }
+
+
+/* responsive  */
+
+@media screen and (max-width:600px) {
+    body{
+        background-color: black;
+        
+    }
+    .wrapper{
+        width: 100%;
+    }
+
+
+    nav{
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+    .nav_items{
+        display: none;
+    }
+
+    .searchbar{
+        margin-right: 20px;
+        display: flex;
+        font-size: 12px;
+        width: 40%;
+        justify-content: center;
+    }
+    input::placeholder{
+        font-size: 10px;
+        width: 100%;
+    }
+    
+
+
+
+
+
+    .fixed_contactus,.fixed_facebook{
+        display: none;
+    }
+
+    .main_container{
+        width: 100%;
+        left: 0;
+        top: 190px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .main_box{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .main_box h1{
+        font-size: 25px;
+    }
+    .main_box p{
+        font-size: 16px;
+    }
+
+    .btn{
+        display:block;
+        margin:  0 auto;
+        text-align: center;
+    }
+    a{
+         text-decoration: none;
+    }
+
+    .banner{
+        height: 95vh;
+    }
+    #slideImg{
+        width: 250%;
+        height: 100%;
+        position: absolute;
+        top:0px;
+        left: -300px;
+        object-position: cover;        
+    }
+
+
+
+    .faq_container{
+        margin: 0;
+    }
+    .your_question{
+        margin: 5px;
+        margin: 0;
+    }
+    
+    .quick_links{
+        width: 100%;
+    }
+   
+    .quick_links ul li a{
+        width: 100%;
+       font-size: 8px;
+       padding: 5px;
+       margin: 0;
+    }
+    
+}
+    
