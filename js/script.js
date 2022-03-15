@@ -22,7 +22,7 @@ function slider() {
     }
     slideImg.src = images[i];
     i++;
-    setTimeout('slider()', 5000)
+    setTimeout('slider()', 3000)
 }
 
 

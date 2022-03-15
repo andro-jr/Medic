@@ -17,8 +17,11 @@
 
     <!------------------------------------------ navigation section------------------------------------------->
     <header>
-        <!-- <div class="wrapper"> -->
         <nav>
+
+            <div class="menu_icon">
+                <span class="fas fa-bars"></span>
+            </div>
             <div class="logo_container">
                 <a href="">
                     <img src="images/medic-logo-revised.jpg">
@@ -33,22 +36,27 @@
                     <li> <a href="">CONTACT US</a></li>
                 </ul>
             </div>
-            <div class="searchbar">
-
-                <input type="text" placeholder="Enter your search"><i class="fa-solid fa-magnifying-glass"></i>
-
+            <div class="search_bar">
+                <form action="">
+                    <input type="search" class="search_data" placeholder="Search" required>
+                    <button type="submit" class="fas fa-search"></button>
+                </form>
+                <div class="search_icon"><span class="fas fa-search"></span></div>
             </div>
+            <div class="cancel_icon"><span class="fas fa-times"></span></div>
         </nav>
-        <!-- </div> -->
-        <div class="fixed_contactus">
-            <a href="">
-                <i class="fa-solid fa-phone-flip"></i>
-            </a>
-        </div>
-        <div class="fixed_facebook">
-            <a href="">
-                <i class="fa-brands fa-facebook-square"></i>
-            </a>
+
+        <div class="fixed_buttons">
+            <div class="fixed_contactus">
+                <a href="">
+                    <i class="fa-solid fa-phone-flip"></i>
+                </a>
+            </div>
+            <div class="fixed_facebook">
+                <a href="">
+                    <i class="fa-brands fa-facebook-square"></i>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -832,6 +840,18 @@
                     panel.style.maxHeight = panel.scrollHeight + 'px';
                 }
             })
+
+        }
+
+
+        // for search button 
+        const menuBtn = document.querySelector(".menu_icon");
+        const searchBtn = document.querySelector(".search_icon");
+        const cancelBtn = document.querySelector(".cancel_icon");
+        const form = document.querySelector("form");
+        menuBtn.onclick = () => {
+            items.classList.add("active");
+            this.classList.add("hide")
 
         }
     </script>
