@@ -69,7 +69,7 @@ ul li a{
 .nav_items ul li a:hover:after {
     width: 100%;
 }
-.active a::after{
+.nav_active a::after{
     width:100%;
 }
 
@@ -117,10 +117,8 @@ nav .menu_icon{
     display: none;
 }
 nav .cancel_icon{
-    text-align: center;
     width: 40px;
     color: white;
-    margin-right:20px;
     font-size: 18px;
     display: none;
 }
@@ -449,7 +447,7 @@ nav .cancel_icon{
 }
 .services_img{
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     object-fit: cover;
 }
 .services_img img{
@@ -458,7 +456,7 @@ nav .cancel_icon{
 }
 .services_content{
     width: 70%;
-    height: 230px;
+    height: 100%;
     position: absolute;
     background-color: #c59700;
     top: 270px;
@@ -510,6 +508,7 @@ nav .cancel_icon{
     display: flex;
     width: 800px;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -958,6 +957,7 @@ footer{
     color: white;
     margin-bottom: 20px;
     letter-spacing: 1px;
+    text-align: center;
 }
 .footer_box p{
     width: 50%;
@@ -1044,28 +1044,42 @@ footer{
     .wrapper{
         width: 90%;
     }
+    .about_text_area{
+        margin: 40px 20px 0 20px;
+    }
+    .images_area{
+        margin-right: 0;
+    }
 
 
 }
-@media screen and (max-width:999px){
-    
+@media screen and (max-width:899px){
+    .wrapper{
+        width: 95%;
+    }
     .logo_container{
         margin: 0;
         width: 20%;
-        border: 2px solid red;
         padding: 0;
     }
-    nav{
+    header{
         justify-content: space-around;
+        padding: 5px;
     }
     
     .nav_items{
         position: fixed;
-        top: 70px;
+        top: 0px;
+        right: -100%;
         width: 100%;
         height: 100%;
         z-index: 99;
         background-color: #001c2b;
+        transition: right 0.3s ease;
+        padding-top: 70px;
+    }
+    nav .nav_items.active{
+        right: 0;
     }
     .nav_items ul{
         flex-direction: column;
@@ -1074,15 +1088,6 @@ footer{
         color: white;
         margin: 10px;
     }
-
-
-
-
-
-
-    .wrapper{
-        width: 95%;
-    }
     .search_icon,nav .menu_icon{
         display: block;
     }
@@ -1090,45 +1095,97 @@ footer{
     .fixed_buttons{
         display: none;
     }
-    .search_bar{
-        position: relative;
+
+    nav .menu_icon span.hide,
+    nav .search_icon.hide{
+        display: none;
     }
-    nav form{
-       width: 250px;
-        display: flex;
-        position: absolute;
-        top: 50px;
-        right: 50px;
+    nav .cancel_icon.show{
+        z-index: 1000;
+        display: block;
+        color: #c59700;
     }
 
+    .main_container{
+        left: 70px;
+    }
     .quick_links ul{
         flex-direction: column;
     }
-
-
-
-
-}
-@media screen and (max-width:600px) {
-    .wrapper{
-        width: 100%;
+    #slideImg{
+        width: 150%;
+        height: 100%;
+        position: absolute;
+        top:0px;
+        left: -100px;     
     }
-
-
-    nav{
-        justify-content: space-between;
-        padding: 15px 0;
+    .services_img{
+        z-index: -1;
     }
-    .logo_container{
-        width: 25%;
+    .services_content{
+        position: absolute;
+        top: 103px;
+        z-index: 5;
     }
- 
+    .footer_box h1{
+        font-size: 25px;
+        margin:  20px;
+    }
+    .footer_box p{
+        font-size: 16px;
+    }
+    
+    .quick_links ul li{
+        border: none;
+        margin: 10px;
+    }
     
 
 
+    
 
+}
+@media screen and (max-width:780px)and (min-width:601px){
+    .main_box{
+        width: 500px;
+    }
+    .main_box h1{
+        font-size: 25px;
+    }
+    .main_box p{
+        font-size: 16px;
+    }
+    .main_container{
+        left: 50px;
+    }
+    #slideImg{
+        width: 160%;
+        height: 100%;
+        position: absolute;
+        top:0px;
+        left: -100px;     
+    }
+        
+}
+@media screen and (max-width:600px){
+    .wrapper{
+        width: 95%;
+    }
 
-
+    nav{
+        justify-content: space-around;
+        padding: 15px 0;
+    }
+    .logo_container{
+        width: 30%;
+    }
+    nav form{
+        width: 150px;
+    }
+    .title{
+        margin-left: 10px;
+    }
+    
    
 
     .main_container{
@@ -1168,30 +1225,59 @@ footer{
         height: 100%;
         position: absolute;
         top:0px;
-        left: -300px;
-        object-position: cover;        
+        left: -300px;     
     }
 
 
 
-    .faq_container{
-        margin: 0;
+    .services_box{
+        box-shadow: none;
     }
-    .your_question{
-        margin: 5px;
-        margin: 0;
+    .services_content {
+        width: 100%;
+        left: 0;
+        height: auto;
+
     }
     
-    .quick_links{
+    .services_content h2{
+         font-size: 24px;
+         margin-bottom: 0;
+    }
+    .services_content p{
+         font-size: 15px;
+         padding:10px 5px;
+    }
+    .btn_2{
         width: 100%;
     }
-   
-    .quick_links ul li a{
-        width: 100%;
-       font-size: 8px;
-       padding: 5px;
-       margin: 0;
+
+    .questions{
+        max-width: 100%;
     }
+    .faq_container{
+        margin: 10px;
+    }
+    .your_question{
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+
+    .footer_box h1{
+        font-size: 20px;
+    }
+    .footer_box p{
+        font-size: 16px;
+    }
+    .copyright p{
+        font-size: 15px;
+    } 
+    .socials .fa-brands{
+        margin: 5px;
+        margin-top: 20px;
+    }
+ 
     
 }
     

@@ -19,9 +19,6 @@
     <header>
         <nav>
 
-            <div class="menu_icon">
-                <span class="fas fa-bars"></span>
-            </div>
             <div class="logo_container">
                 <a href="">
                     <img src="images/medic-logo-revised.jpg">
@@ -29,7 +26,7 @@
             </div>
             <div class="nav_items">
                 <ul>
-                    <li class="active"><a href="">HOME</a></li>
+                    <li class="nav_active"><a href="">HOME</a></li>
                     <li> <a href="">PRODUCTS</a></li>
                     <li> <a href="">ABOUT</a></li>
                     <li> <a href="">BLOGS</a></li>
@@ -41,9 +38,14 @@
                     <input type="search" class="search_data" placeholder="Search" required>
                     <button type="submit" class="fas fa-search"></button>
                 </form>
-                <div class="search_icon"><span class="fas fa-search"></span></div>
+            </div>
+
+            <!-- <div class="search_icon"><span class="fas fa-search"></span></div> -->
+            <div class="menu_icon">
+                <span class="fas fa-bars"></span>
             </div>
             <div class="cancel_icon"><span class="fas fa-times"></span></div>
+
         </nav>
 
         <div class="fixed_buttons">
@@ -845,15 +847,29 @@
 
 
         // for search button 
-        const menuBtn = document.querySelector(".menu_icon");
-        const searchBtn = document.querySelector(".search_icon");
+        const menuBtn = document.querySelector(".menu_icon span");
+        // const searchBtn = document.querySelector(".search_icon");
         const cancelBtn = document.querySelector(".cancel_icon");
+        const items = document.querySelector(".nav_items");
         const form = document.querySelector("form");
         menuBtn.onclick = () => {
             items.classList.add("active");
-            this.classList.add("hide")
-
+            menuBtn.classList.add("hide");
+            // searchBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
         }
+        cancelBtn.onclick = () => {
+            items.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            // searchBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            form.classList.remove("active");
+        }
+        // searchBtn.onclick = () => {
+        //     form.classList.add("active");
+        //     searchBtn.classList.add("hide");
+        //     cancelBtn.classList.add("show");
+        // }
     </script>
 
 </body>
