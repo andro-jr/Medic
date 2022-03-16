@@ -602,11 +602,12 @@ nav .cancel_icon{
     text-align: center;
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
+    color: rgb(90, 90, 90);
 }
 .teste_box h2{
     font-family: 'Poppins', sans-serif;
-    font-size: 23px;
-    color: #001c2b;
+    font-size: 20px;
+    color: black;
 }
 .fa-quote-left{
     font-size: 40px;
@@ -1081,7 +1082,7 @@ footer{
         z-index: 99;
         background-color: #001c2b;
         transition: right 0.3s ease;
-        padding-top: 70px;
+        padding-top: 150px;
     }
     nav .nav_items.active{
         right: 0;
@@ -1146,6 +1147,7 @@ footer{
         margin: 10px;
     }
     
+    
 
 
     
@@ -1170,6 +1172,13 @@ footer{
         position: absolute;
         top:0px;
         left: -100px;     
+    }
+    .questions{
+        max-width: 90%;
+    }
+    .your_question{
+        margin: 20px auto;
+        margin-top: 40px;
     }
         
 }
@@ -1257,15 +1266,20 @@ footer{
     .btn_2{
         width: 100%;
     }
-
+    
+    .your_question{
+        margin: 20px auto;
+        margin-top: 40px;
+    }
     .questions{
-        max-width: 100%;
+        margin: 20px auto;
+        max-width: 90%;
     }
     .faq_container{
-        margin: 10px;
+        margin: 10px auto;
     }
     .your_question{
-        margin: 0px;
+        margin: 0px auto;
         margin-top: 20px;
     }
 
