@@ -115,7 +115,7 @@ nav form input::placeholder{
 nav .menu_icon{
     color: #001c2b;
     width: 40px;
-    font-size: 18px;
+    font-size: 22px;
     text-align: center;
     display: none;
 }
@@ -368,13 +368,12 @@ nav .cancel_icon{
     line-height: 18px;
 }
 .product_btn{
-    width: 50%;
     z-index: 3;
     display: block;
     position: absolute;
     top: 35%;
     left: 35%;
-    width: 120px;
+    width: 113px;
     margin: 20px auto;
     background-color: #dab641;
     padding: 20px 0;
@@ -1247,7 +1246,7 @@ footer{
     }
 
     .banner{
-        height: 95vh;
+        height: 90vh;
     }
     #slideImg{
         width: 250%;
