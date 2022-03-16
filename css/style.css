@@ -603,6 +603,11 @@ nav .cancel_icon{
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
 }
+.teste_box h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+    color: #001c2b;
+}
 .fa-quote-left{
     font-size: 40px;
     margin:20px;
@@ -1119,6 +1124,7 @@ footer{
         top:0px;
         left: -100px;     
     }
+
     .services_img{
         z-index: -1;
     }
