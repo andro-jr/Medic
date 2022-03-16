@@ -1146,9 +1146,12 @@ footer{
     .services_img{
         z-index: -1;
     }
+    .services_box{
+        overflow: auto;
+    }
     .services_content{
         position: absolute;
-        top: 103px;
+        top: 175px;
         z-index: 5;
     }
     .footer_box h1{
