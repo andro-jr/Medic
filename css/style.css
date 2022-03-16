@@ -72,6 +72,9 @@ ul li a{
 .nav_active a::after{
     width:100%;
 }
+.searchbar_for_mobile{
+    display: none;
+}
 
 nav form{
     display: flex;
@@ -1069,8 +1072,11 @@ footer{
         padding: 0;
     }
     header{
-        justify-content: space-around;
         padding: 5px;
+    }
+    nav{
+        justify-content: space-between;
+        padding: 15px;
     }
     
     .nav_items{
@@ -1082,7 +1088,7 @@ footer{
         z-index: 99;
         background-color: #001c2b;
         transition: right 0.3s ease;
-        padding-top: 150px;
+        padding-top: 100px;
     }
     nav .nav_items.active{
         right: 0;
@@ -1096,6 +1102,18 @@ footer{
     }
     .search_icon,nav .menu_icon{
         display: block;
+    }
+    .searchbar_for_mobile{
+        display: block;
+        z-index: 100;
+    }
+    .searchbar_for_mobile form{
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .search_bar{
+        display: none;
     }
     
     .fixed_buttons{
@@ -1187,10 +1205,6 @@ footer{
         width: 95%;
     }
 
-    nav{
-        justify-content: space-around;
-        padding: 15px 0;
-    }
     .logo_container{
         width: 30%;
     }
