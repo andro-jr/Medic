@@ -75,27 +75,23 @@ body{
     color: rgb(70, 70, 70);
 }
 .title_2{
-    width: 20%;
-    display: block;
-    margin: 40px auto;
-    font-family: 'Poppins', sans-serif;
-    color: #0d6594;
-    position: relative;
-    padding: 8px 0;
     text-align: center;
-    
-    
+    margin: 0 auto 80px;
+    position: relative;
+    color: #1b7db3;
+    font-family: 'Poppins', sans-serif;
+    line-height: 60px;
 }
 .title_2::after{
     content: '';
-    width: 50px;
-    height: 5px;
-    background-color: #b48b03;
+    background: #c59700;
     position: absolute;
-    bottom: 0;
-    right: 41%;
+    width:70px;
+    height:5px;
     border-radius: 5px;
-    margin-left: 2px;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
 }
 @media screen and (max-width:1200px){
 .category_select,.category_panel{
@@ -130,16 +126,124 @@ body{
 .title_2::after{
     right: 30%;
 }
+
+}
+
+
+
+
+
+
+
+
+
+.product_details{
+    margin-top: 180px;
+}
+.details_container{
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.details_box {
+    padding: 20px;
+    width: 50%; 
+    margin: auto;
+}
+.details_img{
+    max-width: 500px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details_img img{
+    width: 300px;
+    padding: 0;
+}
+.details_box p{
+    font-family: 'Hubballi', cursive;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(65, 65, 65);
+}
+.details_box h1{
+    font-family: 'Poppins', sans-serif;
+}
+.details_box h4{
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.details_box select{
+    background-color: rgb(32, 32, 32);
+    color: white;
+    padding:10px 3px;
+    margin-bottom: 20px;
+    width:100px;
+}
+.details_box input{
+    padding: 10px;
+    display: block;
+    width: 65px;
+    cursor: pointer;
+}
+.details_box label{
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+.details_box h3{
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+.details_box .fa-solid{
+    color: #eb4848;
+}
+
+.details_box .btn{
+    margin: 15px 0;
+    width: 100px;
+    padding:  10px 20px;
+    background: #c59700;
+    border: none;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #c59700;
+    transition: 0.5s;
+    color: white;
+}
+.btn:hover{
+    box-shadow: inset 100px 0 0 0 rgb(30,110,181);
+    background: transparent;
+}
+
+@media screen and (max-width:899px){
+    .details_box{
+        width: 100%;
+    }
+    .product_details{
+        margin-top:100px ;
+    }
 }
 
 @media screen and (max-width:600px){
-    .title_2{
-        width: 40%;
+    .details_box{
+        text-align: center;
     }
-    .title_2::after{
-        right: 35%;
+    .details_box input{
+        margin: 10px auto;
     }
- 
+    .details_box .btn{
+        margin: 15px auto;
+    }
+    
+
 }
 
 
