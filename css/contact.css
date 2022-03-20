@@ -1,0 +1,104 @@
+.pages_banner{
+    background-image: url('../images/contact_us_background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+#contact_us{
+    background-color: aliceblue;
+    min-height: 100vh;
+}
+.contact_container{
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact_details{
+    background-color: rgb(16, 57, 190);
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    min-width: 500px;
+    margin: 5px 0;
+    box-shadow: 1px 1px 10px grey;
+}
+.details_box{
+    text-align: center;
+    padding: 30px;
+    width: 48%;
+}
+.details_box .fa-solid{
+    color: rgb(0, 147, 233);
+    font-size: 30px;
+}
+.details_box h4{
+    letter-spacing: 1px;
+    color: white;
+    font-size: 18px;
+}
+iframe{
+    width: 100%;
+    padding: 20px;
+    margin:  auto;
+}
+.contact_box{
+    min-width: 500px;
+    width: 48%;
+    padding: 20px;
+    box-shadow: 1px 1px 10px grey;
+    margin: 5px 0;
+    background-color: white;
+}
+.contact_box h2{
+    font-family: 'Hubballi', cursive;
+    font-size: 30px;
+    margin: 40px auto;
+    width: 100%;
+    text-align: center;
+    color: rgb(16, 57, 190);
+}
+.contact_box form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.contact_box form input,
+.contact_box form textarea{
+    border: none;
+    border-bottom: 2px solid rgb(16, 57, 190);
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    color:rgb(16, 57, 190);
+    background: transparent;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.contact_box form label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: rgb(17, 56, 184);
+    cursor: text;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+}
+#submit{
+    font-size: 20px;
+    padding: 10px 0;
+    outline: none;
+    background-color:rgb(17, 56, 184) ;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+    color: white;
+}
+#submit:hover{
+    color:rgb(17, 56, 184) ;
+    border: 2px solid rgb(17, 56, 184);
+    background: transparent;
+}

@@ -89,6 +89,7 @@
 }
 .sisters_box{
     margin: 20px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,5 +113,7 @@
 
     .pages_banner{
         background-position: center;
+        height: 45vh;
     }
+    
 }    

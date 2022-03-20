@@ -403,7 +403,7 @@ nav .cancel_icon{
     opacity: 0;
 }
 .product_btn:hover{
-    width: 135px;
+    width: 130px;
 }
 .product_btn:hover .fa-arrow-right-long ,
 .featured_box:hover::after ,
@@ -823,6 +823,7 @@ form textarea:valid~label
     border-radius: 10px;
     margin: 10px;
     box-shadow: 0 10px 20px rgba(197, 197, 197,.7);
+    margin: 40px 10px;
     
 }
 .blogs_img{
@@ -895,6 +896,7 @@ form textarea:valid~label
 #clients{
     /* min-height: 100vh; */
     overflow: hidden;
+    margin-bottom: 50px;
 }
 .clients_slider{
     height: 250px;
@@ -944,7 +946,7 @@ form textarea:valid~label
 footer{
     min-height: 60vh;
     background-color: #001c2b;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 .footer_container{
     padding-top: 50px;
@@ -1248,7 +1250,7 @@ footer{
     }
 
     .banner{
-        height: 90vh;
+        height:95vh;
     }
     #slideImg{
         width: 250%;
