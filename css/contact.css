@@ -33,7 +33,7 @@
     width: 48%;
 }
 
-.details_box .fa-solid {
+.details_box .fas {
     color: rgb(0, 147, 233);
     font-size: 30px;
 }
@@ -99,8 +99,11 @@ iframe {
     transition: 0.2s;
 }
 
-.input_group label .fa-solid {
-    padding-right: 7px;
+.input_group label .fas {
+    color: rgb(16, 57, 190);
+    font-size: 20px;
+    margin-right: 5px;
+    padding: 0;
 }
 
 #submit {
@@ -113,6 +116,7 @@ iframe {
     font-family: 'Poppins', sans-serif;
     transition: 0.5s;
     color: white;
+    margin: 20px 0;
 }
 
 #submit:hover {

@@ -1,79 +1,87 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-.pages_banner{
+
+.pages_banner {
     height: 70vh;
     background-image: url('../images/products_background.jpg');
     background-size: cover;
     background-attachment: fixed;
-    opacity:1;
+    opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.main_container{
+
+.main_container {
     position: static;
 }
-.main_box{
+
+.main_box {
     width: auto;
     text-align: center;
-    background-color:rgba(30,110,181,0.71);
+    background-color: rgba(30, 110, 181, 0.71);
 }
-.main_box h1{
+
+.main_box h1 {
     padding: 10px 30px;
 }
 
-.selector{
+.selector {
     margin: 40px;
 }
-.category_select{
+
+.category_select {
     width: 200px;
     padding: 0 5px;
-    /* border: 2px solid #6db5ff; */
     cursor: pointer;
-    /* border-radius: 50px; */
     display: flex;
+    justify-content: space-between;
     margin-top: 20px;
     align-items: center;
     padding: 10px;
-    /* background-image: linear-gradient(90deg,rgba(30,110,181,0.71) 0%,rgba(201,201,201,0.08) 67%); */
-    /* background-color: #0d6594; */
     background-color: #c59700;
 }
-.faq_icon{
+
+.faq_icon {
     color: white;
 }
-.category_select h5{
+
+.category_select h5 {
     font-size: 20px;
     font-family: 'Baloo Bhai 2', cursive;
     letter-spacing: 1px;
     color: rgb(43, 42, 42);
     color: white;
 }
-.category_panel{
+
+.category_panel {
     width: 200px;
-    max-height:0px;
+    max-height: 0px;
     overflow: hidden;
     transition: 0.5s ease-in;
 }
-.category_panel a{
+
+.category_panel a {
     border-left: 10px solid #ecc441;
     background-color: #21536d;
     font-family: 'Hubballi', cursive;
     font-size: 20px;
     font-weight: 400;
-    padding:10px;
-    margin:10px 0;
+    padding: 10px;
+    margin: 10px 0;
     text-decoration: none;
     color: white;
     font-weight: bolder;
     display: block;
     transition: 0.1s;
 }
-.category_panel a:hover{
+
+.category_panel a:hover {
     color: #ecc441;
 }
-.title_2{
+
+.title_2 {
     text-align: center;
     margin: 0 auto 80px;
     position: relative;
@@ -81,52 +89,64 @@ html{
     font-family: 'Poppins', sans-serif;
     line-height: 60px;
 }
-.title_2::after{
+
+.title_2::after {
     content: '';
     background: #c59700;
     position: absolute;
-    width:50px;
-    height:5px;
+    width: 50px;
+    height: 5px;
     border-radius: 5px;
-    bottom:0;
-    left:50%;
+    bottom: 0;
+    left: 50%;
     transform: translateX(-50%);
 }
-@media screen and (max-width:1200px){
-.category_select,.category_panel{
-    width: 30%;
-}
-}
-@media screen and (max-width:899px){
 
-.pages_banner{
-    background-position: center;
-    height: 45vh;
-}
-.main_container{
-    
-    margin-top: 50px;
-   
-}
-.main_box h1{
-    font-size: 20px;
-    padding: 0px 10px;
-}
-.selector{
-    width: 90%;
-    margin: 10px auto;
-}  
-.category_select,.category_panel{
-    width: 100%;
-    
-}
-.title_2 h2{
-    font-size: 20px;
-}
-.title_2::after{
-    right: 30%;
+@media screen and (max-width:1200px) {
+
+    .category_select,
+    .category_panel {
+        width: 30%;
+    }
 }
 
+@media screen and (max-width:899px) {
+
+    .pages_banner {
+        background-position: center;
+        height: 45vh;
+    }
+
+    .main_container {
+
+        margin-top: 50px;
+
+    }
+
+    .main_box h1 {
+        font-size: 20px;
+        padding: 0px 10px;
+    }
+
+    .selector {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .category_select,
+    .category_panel {
+        width: 100%;
+
+    }
+
+    .title_2 h2 {
+        font-size: 20px;
+    }
+
+    .title_2::after {
+        right: 30%;
+    }
+
 }
 
 
@@ -137,41 +157,48 @@ html{
 
 
 
-.product_details{
+.product_details {
     margin-top: 180px;
 }
-.details_container{
+
+.details_container {
     width: 100%;
     margin: 20px auto;
     display: flex;
     flex-wrap: wrap;
 }
+
 .details_box {
     padding: 20px;
-    width: 50%; 
+    width: 50%;
     margin: auto;
 }
-.details_img{
+
+.details_img {
     max-width: 500px;
     min-width: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.details_img img{
+
+.details_img img {
     width: 300px;
     padding: 0;
 }
-.details_box p{
+
+.details_box p {
     font-family: 'Hubballi', cursive;
     font-weight: bold;
     font-size: 18px;
     color: rgb(65, 65, 65);
 }
-.details_box h1{
+
+.details_box h1 {
     font-family: 'Poppins', sans-serif;
 }
-.details_box h4{
+
+.details_box h4 {
     margin: 10px 0;
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
@@ -179,36 +206,40 @@ html{
     color: red;
 }
 
-.details_box select{
+.details_box select {
     background-color: rgb(32, 32, 32);
     color: white;
-    padding:10px 3px;
+    padding: 10px 3px;
     margin-bottom: 20px;
-    width:100px;
+    width: 100px;
 }
-.details_box input{
+
+.details_box input {
     padding: 10px;
     display: block;
     width: 65px;
     cursor: pointer;
 }
-.details_box label{
+
+.details_box label {
     display: inline;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
 }
-.details_box h3{
+
+.details_box h3 {
     font-family: 'Baloo Bhai 2', cursive;
 
 }
-.details_box .fa-solid{
+
+.details_box .fa-solid {
     color: #eb4848;
 }
 
-.details_box .btn{
+.details_box .btn {
     margin: 15px 0;
     width: 100px;
-    padding:  10px 20px;
+    padding: 10px 20px;
     background: #c59700;
     border: none;
     font-family: 'Baloo Bhai 2', cursive;
@@ -218,34 +249,34 @@ html{
     transition: 0.5s;
     color: white;
 }
-.btn:hover{
-    box-shadow: inset 100px 0 0 0 rgb(30,110,181);
+
+.btn:hover {
+    box-shadow: inset 100px 0 0 0 rgb(30, 110, 181);
     background: transparent;
 }
 
-@media screen and (max-width:899px){
-    .details_box{
+@media screen and (max-width:899px) {
+    .details_box {
         width: 100%;
     }
-    .product_details{
-        margin-top:100px ;
+
+    .product_details {
+        margin-top: 100px;
     }
 }
 
-@media screen and (max-width:600px){
-    .details_box{
+@media screen and (max-width:600px) {
+    .details_box {
         text-align: center;
     }
-    .details_box input{
+
+    .details_box input {
         margin: 10px auto;
     }
-    .details_box .btn{
+
+    .details_box .btn {
         margin: 15px auto;
     }
-    
+
 
 }
-
-
-
-

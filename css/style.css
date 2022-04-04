@@ -365,7 +365,7 @@ nav .cancel_icon {
     border-radius: 15px;
     margin: 10px;
     padding: 20px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.03);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(0, 0, 0, 0.08);
     overflow: hidden;
     transition: all ease 0.3s;
