@@ -99,6 +99,10 @@ iframe {
     transition: 0.2s;
 }
 
+.input_group label .fa-solid {
+    padding-right: 7px;
+}
+
 #submit {
     font-size: 20px;
     padding: 10px 0;
