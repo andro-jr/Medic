@@ -289,6 +289,9 @@ nav .cancel_icon {
 }
 
 .main_box p {
+    font-size: 17px;
+    letter-spacing: 1px;
+    word-spacing: .5px;
     text-shadow: rgb(0 0 0 / 50%) 0 0 7px;
     color: white;
     padding: 22px;
@@ -412,7 +415,8 @@ nav .cancel_icon {
     color: #eb4848;
     margin: 5px 0;
     font-family: 'Work Sans', sans-serif;
-    font-weight: bolder;
+    font-weight: 800;
+    margin-top: 10px;
     letter-spacing: 0.5px;
 }
 
@@ -421,10 +425,12 @@ nav .cancel_icon {
 }
 
 .product_description p {
-    font-family: 'Hubballi', cursive;
-    font-size: 18px;
-    color: rgb(87, 87, 87);
-    line-height: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    letter-spacing: 1px;
+    word-spacing: .5px;
+    line-height: 24px;
 }
 
 .product_btn {
@@ -703,10 +709,12 @@ nav .cancel_icon {
 }
 
 .teste_box p {
-    text-align: center;
-    font-size: 15px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(90, 90, 90);
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    letter-spacing: 1px;
+    word-spacing: .5px;
+    line-height: 24px;
 }
 
 .teste_box h2 {
@@ -796,9 +804,13 @@ nav .cancel_icon {
 }
 
 .faq_panel p {
-    font-family: 'Hubballi', cursive;
-    font-size: 20px;
-    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    letter-spacing: 1px;
+    word-spacing: .5px;
+    line-height: 24px;
+    color: white;
     padding: 10px;
 }
 
@@ -987,8 +999,12 @@ form textarea:valid~label {
 
 .blogs_content p {
     padding: 5px 0;
-    color: #001c2b;
-    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    letter-spacing: 1px;
+    word-spacing: .5px;
+    line-height: 24px;
 }
 
 .blog_date {

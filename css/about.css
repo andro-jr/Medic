@@ -40,10 +40,13 @@
 .intro_box p {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    color: rgb(56, 56, 56);
+    color: rgb(65, 65, 65);
+    letter-spacing: 1px;
+    word-spacing: .5px;
+    line-height: 24px;
 }
 
-.intro_container {}
+
 
 .intro_text {
     margin: 2px auto;

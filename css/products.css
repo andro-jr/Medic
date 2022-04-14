@@ -183,15 +183,17 @@ html {
 }
 
 .details_img img {
-    width: 300px;
+    width: 100%;
     padding: 0;
 }
 
 .details_box p {
-    font-family: 'Hubballi', cursive;
-    font-weight: bold;
-    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
     color: rgb(65, 65, 65);
+    letter-spacing: 1px;
+    word-spacing: .5px;
+    line-height: 24px;
 }
 
 .details_box h1 {
@@ -232,7 +234,7 @@ html {
 
 }
 
-.details_box .fa-solid {
+.details_box .fas {
     color: #eb4848;
 }
 

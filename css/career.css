@@ -88,6 +88,11 @@
 
 .career_contents p {
     font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    letter-spacing: 1px;
+    word-spacing: .5px;
+    line-height: 24px;
 }
 
 .career_contents h3 {
@@ -105,6 +110,12 @@
 .career_contents ul li {
     font-family: 'Poppins', sans-serif;
     color: rgb(72, 72, 72);
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: rgb(65, 65, 65);
+    letter-spacing: 1px;
+    word-spacing: .5px;
+    line-height: 24px;
 }
 
 .fa-check-circle {
@@ -114,6 +125,12 @@
 
 .submit p {
     margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    color: rgb(65, 65, 65);
+    letter-spacing: 1px;
+    word-spacing: .5px;
+    line-height: 24px;
 }
 
 .submit p a {
