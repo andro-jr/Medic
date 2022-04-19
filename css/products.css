@@ -1,284 +1,267 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 .pages_banner {
-    height: 70vh;
-    background-image: url('../images/products_background.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    opacity: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 70vh;
+  background-image: url("../images/products_background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main_container {
-    position: static;
+  position: static;
 }
 
 .main_box {
-    width: auto;
-    text-align: center;
-    background-color: rgba(30, 110, 181, 0.71);
+  width: auto;
+  text-align: center;
+  background-color: rgba(30, 110, 181, 0.71);
 }
 
 .main_box h1 {
-    padding: 10px 30px;
+  padding: 10px 30px;
 }
 
 .selector {
-    margin: 40px;
+  position: absolute;
+  margin: 0 40px;
+  z-index: 10;
 }
-
+.select_container {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  margin: 40px 0;
+}
 .category_select {
-    width: 200px;
-    padding: 0 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    align-items: center;
-    padding: 10px;
-    background-color: #c59700;
+  width: 200px;
+  padding: 0 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+  padding: 10px;
+  background-color: #c59700;
 }
 
 .faq_icon {
-    color: white;
+  color: white;
 }
 
 .category_select h5 {
-    font-size: 20px;
-    font-family: 'Baloo Bhai 2', cursive;
-    letter-spacing: 1px;
-    color: rgb(43, 42, 42);
-    color: white;
+  font-size: 20px;
+  font-family: "Baloo Bhai 2", cursive;
+  letter-spacing: 1px;
+  color: rgb(43, 42, 42);
+  color: white;
 }
 
 .category_panel {
-    width: 200px;
-    max-height: 0px;
-    overflow: hidden;
-    transition: 0.5s ease-in;
+  width: 200px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 0.5s ease-in;
 }
 
 .category_panel a {
-    border-left: 10px solid #ecc441;
-    background-color: #21536d;
-    font-family: 'Hubballi', cursive;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 10px;
-    margin: 10px 0;
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    display: block;
-    transition: 0.1s;
+  border-left: 10px solid #ecc441;
+  background-color: #21536d;
+  font-family: "Hubballi", cursive;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 10px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  display: block;
+  transition: 0.1s;
 }
 
 .category_panel a:hover {
-    color: #ecc441;
+  color: #ecc441;
 }
 
 .title_2 {
-    text-align: center;
-    margin: 0 auto 80px;
-    position: relative;
-    color: #001c2b;
-    font-family: 'Poppins', sans-serif;
-    line-height: 60px;
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  color: #001c2b;
+  font-family: "Poppins", sans-serif;
+  line-height: 60px;
 }
 
 .title_2::after {
-    content: '';
-    background: #c59700;
-    position: absolute;
-    width: 50px;
-    height: 5px;
-    border-radius: 5px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  content: "";
+  background: #c59700;
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  border-radius: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 899px) {
+  .pages_banner {
+    background-position: center;
+    height: 45vh;
+  }
 
-    .category_select,
-    .category_panel {
-        width: 30%;
-    }
+  .main_container {
+    margin-top: 50px;
+  }
+
+  .main_box h1 {
+    font-size: 20px;
+    padding: 0px 10px;
+  }
+
+  .selector {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .category_select,
+  .category_panel {
+    width: 100%;
+  }
+
+  .title_2 h2 {
+    font-size: 20px;
+  }
+
+  .title_2::after {
+    right: 30%;
+  }
 }
-
-@media screen and (max-width:899px) {
-
-    .pages_banner {
-        background-position: center;
-        height: 45vh;
-    }
-
-    .main_container {
-
-        margin-top: 50px;
-
-    }
-
-    .main_box h1 {
-        font-size: 20px;
-        padding: 0px 10px;
-    }
-
-    .selector {
-        width: 90%;
-        margin: 10px auto;
-    }
-
-    .category_select,
-    .category_panel {
-        width: 100%;
-
-    }
-
-    .title_2 h2 {
-        font-size: 20px;
-    }
-
-    .title_2::after {
-        right: 30%;
-    }
-
-}
-
-
-
-
-
-
-
-
 
 .product_details {
-    margin-top: 180px;
+  margin-top: 180px;
 }
 
 .details_container {
-    width: 100%;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .details_box {
-    padding: 20px;
-    width: 50%;
-    margin: auto;
+  padding: 20px;
+  width: 50%;
+  margin: auto;
 }
 
 .details_img {
-    max-width: 500px;
-    min-width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  max-width: 500px;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .details_img img {
-    width: 100%;
-    padding: 0;
+  width: 100%;
+  padding: 0;
 }
 
 .details_box p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 17px;
-    color: rgb(65, 65, 65);
-    letter-spacing: 1px;
-    word-spacing: .5px;
-    line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  color: rgb(65, 65, 65);
+  letter-spacing: 1px;
+  word-spacing: 0.5px;
+  line-height: 24px;
 }
 
 .details_box h1 {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .details_box h4 {
-    margin: 10px 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: red;
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
 }
 
 .details_box select {
-    background-color: rgb(32, 32, 32);
-    color: white;
-    padding: 10px 3px;
-    margin-bottom: 20px;
-    width: 100px;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  padding: 10px 3px;
+  margin-bottom: 20px;
+  width: 100px;
 }
 
 .details_box input {
-    padding: 10px;
-    display: block;
-    width: 65px;
-    cursor: pointer;
+  padding: 10px;
+  display: block;
+  width: 65px;
+  cursor: pointer;
 }
 
 .details_box label {
-    display: inline;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+  display: inline;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 .details_box h3 {
-    font-family: 'Baloo Bhai 2', cursive;
-
+  font-family: "Baloo Bhai 2", cursive;
 }
 
 .details_box .fas {
-    color: #eb4848;
+  color: #eb4848;
 }
 
 .details_box .btn {
-    margin: 15px 0;
-    width: 100px;
-    padding: 10px 20px;
-    background: #c59700;
-    border: none;
-    font-family: 'Baloo Bhai 2', cursive;
-    font-size: 18px;
-    cursor: pointer;
-    box-shadow: inset 0 0 0 0 #c59700;
-    transition: 0.5s;
-    color: white;
+  margin: 15px 0;
+  width: 100px;
+  padding: 10px 20px;
+  background: #c59700;
+  border: none;
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #c59700;
+  transition: 0.5s;
+  color: white;
 }
 
 .btn:hover {
-    box-shadow: inset 100px 0 0 0 rgb(30, 110, 181);
-    background: transparent;
+  box-shadow: inset 100px 0 0 0 rgb(30, 110, 181);
+  background: transparent;
 }
 
-@media screen and (max-width:899px) {
-    .details_box {
-        width: 100%;
-    }
+@media screen and (max-width: 899px) {
+  .details_box {
+    width: 100%;
+  }
 
-    .product_details {
-        margin-top: 100px;
-    }
+  .product_details {
+    margin-top: 100px;
+  }
 }
 
-@media screen and (max-width:600px) {
-    .details_box {
-        text-align: center;
-    }
+@media screen and (max-width: 600px) {
+  .details_box {
+    text-align: center;
+  }
 
-    .details_box input {
-        margin: 10px auto;
-    }
+  .details_box input {
+    margin: 10px auto;
+  }
 
-    .details_box .btn {
-        margin: 15px auto;
-    }
-
-
+  .details_box .btn {
+    margin: 15px auto;
+  }
 }
